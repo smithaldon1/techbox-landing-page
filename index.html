@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>TechBox | Landing</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item item__1">TechBox</li>
+            <li class="nav__item item__2"><a href="#">Pricing</a></li>
+            <li class="nav__item item__3"><button type="submit">Shop</button></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="headline__text">
+            <h1>Popular Tech.</h1>
+            <h1>Affordable Price.</h1>
+            <h5>We provide you with the most trendy tech each month.</h5>
+        </div>
+        <div class="signup__block">
+            <h3>Sign Up!</h3>
+            <hr/>
+            <form name="signupForm" action="#" method="POST">
+                <input type="text" name="fName" id="fName" class="inline" placeholder="First Name" required>
+                <input type="text" name="lName" id="lName" class="inline" placeholder="Last Name" required>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <input type="password" name="spassword" id="spassword" placeholder="Password" required>
+                <input type="password" name="confirmPass" id="confirmPass" placeholder="Confirm Password" required>
+                <p id="login__text">Already have an account? <a href="#" id="login">Login!</a></p>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="login__block">
+            <h3>Log In!</h3>
+            <hr/>
+            <form name="loginForm" action="#" method="POST">
+                <input type="email" name="lemail" id="lemail" placeholder="Email Address" required>
+                <input type="password" name="lpassword" id="lpassword" placeholder="Password" required>
+                <p class="signup__text">Don't have an account? <a href="#" id="signup">Sign Up!</a></p>
+                <button type="submit">Login</button>
+                <hr class="hr__text" data-content="or">
+                <a href="#" target="_blank" class="google__signin">
+                    <svg class="google google__normal" width="193px" height="48px" viewBox="0 0 193 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>btn_google_signin_light_normal_web</title>
+                        <defs>
+                            <rect id="path-1" x="0" y="0" width="185" height="40" rx="2"></rect>
+                            <filter x="-1.1%" y="-5.0%" width="102.2%" height="112.5%" filterUnits="objectBoundingBox" id="filter-2">
+                                <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+                                <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+                                <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+                                <feMerge>
+                                    <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                    <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <g id="btn_google_signin_light_normal_web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="button-bg" transform="translate(4.000000, 4.000000)">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="logo_googleg_48dp" transform="translate(15.000000, 15.000000)">
+                                <path d="M17.64,9.20454545 C17.64,8.56636364 17.5827273,7.95272727 17.4763636,7.36363636 L9,7.36363636 L9,10.845 L13.8436364,10.845 C13.635,11.97 13.0009091,12.9231818 12.0477273,13.5613636 L12.0477273,15.8195455 L14.9563636,15.8195455 C16.6581818,14.2527273 17.64,11.9454545 17.64,9.20454545 L17.64,9.20454545 Z" id="Shape" fill="#4285F4"></path>
+                                <path d="M9,18 C11.43,18 13.4672727,17.1940909 14.9563636,15.8195455 L12.0477273,13.5613636 C11.2418182,14.1013636 10.2109091,14.4204545 9,14.4204545 C6.65590909,14.4204545 4.67181818,12.8372727 3.96409091,10.71 L0.957272727,10.71 L0.957272727,13.0418182 C2.43818182,15.9831818 5.48181818,18 9,18 L9,18 Z" id="Shape" fill="#34A853"></path>
+                                <path d="M3.96409091,10.71 C3.78409091,10.17 3.68181818,9.59318182 3.68181818,9 C3.68181818,8.40681818 3.78409091,7.83 3.96409091,7.29 L3.96409091,4.95818182 L0.957272727,4.95818182 C0.347727273,6.17318182 0,7.54772727 0,9 C0,10.4522727 0.347727273,11.8268182 0.957272727,13.0418182 L3.96409091,10.71 L3.96409091,10.71 Z" id="Shape" fill="#FBBC05"></path>
+                                <path d="M9,3.57954545 C10.3213636,3.57954545 11.5077273,4.03363636 12.4404545,4.92545455 L15.0218182,2.34409091 C13.4631818,0.891818182 11.4259091,0 9,0 C5.48181818,0 2.43818182,2.01681818 0.957272727,4.95818182 L3.96409091,7.29 C4.67181818,5.16272727 6.65590909,3.57954545 9,3.57954545 L9,3.57954545 Z" id="Shape" fill="#EA4335"></path>
+                                <polygon id="Shape" points="0 0 18 0 18 18 0 18"></polygon>
+                            </g>
+                            <text id="Sign-in-with-Google" font-family="Helvetica" font-size="14" font-weight="normal" letter-spacing="0.21875" fill="#000000" fill-opacity="0.54">
+                                <tspan x="54" y="30">Sign in with Google</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                    <svg class="google google__focus" width="193px" height="48px" viewBox="0 0 193 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>btn_google_signin_light_focus_web</title>
+                        <defs>
+                            <rect id="path-1" x="0" y="0" width="185" height="40" rx="2"></rect>
+                            <filter x="-2.2%" y="-10.0%" width="104.3%" height="125.0%" filterUnits="objectBoundingBox" id="filter-2">
+                                <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+                                <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+                                <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+                                <feMerge>
+                                    <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                    <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <g id="btn_google_signin_light_focus_web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <rect id="Rectangle-14" fill-opacity="0.3" fill="#4285F4" x="1" y="1" width="191" height="46"></rect>
+                            <g id="button-bg" transform="translate(4.000000, 4.000000)">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="logo_googleg_48dp" transform="translate(15.000000, 15.000000)">
+                                <path d="M17.64,9.20454545 C17.64,8.56636364 17.5827273,7.95272727 17.4763636,7.36363636 L9,7.36363636 L9,10.845 L13.8436364,10.845 C13.635,11.97 13.0009091,12.9231818 12.0477273,13.5613636 L12.0477273,15.8195455 L14.9563636,15.8195455 C16.6581818,14.2527273 17.64,11.9454545 17.64,9.20454545 L17.64,9.20454545 Z" id="Shape" fill="#4285F4"></path>
+                                <path d="M9,18 C11.43,18 13.4672727,17.1940909 14.9563636,15.8195455 L12.0477273,13.5613636 C11.2418182,14.1013636 10.2109091,14.4204545 9,14.4204545 C6.65590909,14.4204545 4.67181818,12.8372727 3.96409091,10.71 L0.957272727,10.71 L0.957272727,13.0418182 C2.43818182,15.9831818 5.48181818,18 9,18 L9,18 Z" id="Shape" fill="#34A853"></path>
+                                <path d="M3.96409091,10.71 C3.78409091,10.17 3.68181818,9.59318182 3.68181818,9 C3.68181818,8.40681818 3.78409091,7.83 3.96409091,7.29 L3.96409091,4.95818182 L0.957272727,4.95818182 C0.347727273,6.17318182 0,7.54772727 0,9 C0,10.4522727 0.347727273,11.8268182 0.957272727,13.0418182 L3.96409091,10.71 L3.96409091,10.71 Z" id="Shape" fill="#FBBC05"></path>
+                                <path d="M9,3.57954545 C10.3213636,3.57954545 11.5077273,4.03363636 12.4404545,4.92545455 L15.0218182,2.34409091 C13.4631818,0.891818182 11.4259091,0 9,0 C5.48181818,0 2.43818182,2.01681818 0.957272727,4.95818182 L3.96409091,7.29 C4.67181818,5.16272727 6.65590909,3.57954545 9,3.57954545 L9,3.57954545 Z" id="Shape" fill="#EA4335"></path>
+                                <polygon id="Shape" points="0 0 18 0 18 18 0 18"></polygon>
+                            </g>
+                            <text id="Sign-in-with-Google" font-family="Helvetica" font-size="14" font-weight="normal" letter-spacing="0.21875" fill="#000000" fill-opacity="0.54">
+                                <tspan x="54" y="30">Sign in with Google</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                    <svg class="google google__pressed" width="193px" height="48px" viewBox="0 0 193 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>btn_google_signin_light_pressed_web</title>
+                        <defs>
+                            <rect id="path-1" x="0" y="0" width="185" height="40" rx="2"></rect>
+                            <filter x="-2.2%" y="-10.0%" width="104.3%" height="125.0%" filterUnits="objectBoundingBox" id="filter-2">
+                                <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+                                <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+                                <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+                                <feMerge>
+                                    <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                    <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <g id="btn_google_signin_light_pressed_web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="button-bg" transform="translate(4.000000, 4.000000)">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#EEEEEE" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <g id="logo_googleg_48dp" transform="translate(15.000000, 15.000000)">
+                                <path d="M17.64,9.20454545 C17.64,8.56636364 17.5827273,7.95272727 17.4763636,7.36363636 L9,7.36363636 L9,10.845 L13.8436364,10.845 C13.635,11.97 13.0009091,12.9231818 12.0477273,13.5613636 L12.0477273,15.8195455 L14.9563636,15.8195455 C16.6581818,14.2527273 17.64,11.9454545 17.64,9.20454545 L17.64,9.20454545 Z" id="Shape" fill="#4285F4"></path>
+                                <path d="M9,18 C11.43,18 13.4672727,17.1940909 14.9563636,15.8195455 L12.0477273,13.5613636 C11.2418182,14.1013636 10.2109091,14.4204545 9,14.4204545 C6.65590909,14.4204545 4.67181818,12.8372727 3.96409091,10.71 L0.957272727,10.71 L0.957272727,13.0418182 C2.43818182,15.9831818 5.48181818,18 9,18 L9,18 Z" id="Shape" fill="#34A853"></path>
+                                <path d="M3.96409091,10.71 C3.78409091,10.17 3.68181818,9.59318182 3.68181818,9 C3.68181818,8.40681818 3.78409091,7.83 3.96409091,7.29 L3.96409091,4.95818182 L0.957272727,4.95818182 C0.347727273,6.17318182 0,7.54772727 0,9 C0,10.4522727 0.347727273,11.8268182 0.957272727,13.0418182 L3.96409091,10.71 L3.96409091,10.71 Z" id="Shape" fill="#FBBC05"></path>
+                                <path d="M9,3.57954545 C10.3213636,3.57954545 11.5077273,4.03363636 12.4404545,4.92545455 L15.0218182,2.34409091 C13.4631818,0.891818182 11.4259091,0 9,0 C5.48181818,0 2.43818182,2.01681818 0.957272727,4.95818182 L3.96409091,7.29 C4.67181818,5.16272727 6.65590909,3.57954545 9,3.57954545 L9,3.57954545 Z" id="Shape" fill="#EA4335"></path>
+                                <polygon id="Shape" points="0 0 18 0 18 18 0 18"></polygon>
+                            </g>
+                            <text id="Sign-in-with-Google" font-family="Helvetica" font-size="14" font-weight="normal" letter-spacing="0.21875" fill="#000000" fill-opacity="0.54">
+                                <tspan x="54" y="30">Sign in with Google</tspan>
+                            </text>
+                        </g>
+                    </svg>
+                </a>
+            </form>
+        </div>
+        <div class="float__text">
+            <h3>Tech Made Simple</h3>
+            <p>All of the latest tech, shipped right to your door, for one flat-rate.</p>
+        </div>
+        <div class="icon__container">
+            <div class="icon">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="charging-station" class="svg-inline--fa fa-charging-station fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M336 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h320c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm208-320V80c0-8.84-7.16-16-16-16s-16 7.16-16 16v48h-32V80c0-8.84-7.16-16-16-16s-16 7.16-16 16v48h-16c-8.84 0-16 7.16-16 16v32c0 35.76 23.62 65.69 56 75.93v118.49c0 13.95-9.5 26.92-23.26 29.19C431.22 402.5 416 388.99 416 372v-28c0-48.6-39.4-88-88-88h-8V64c0-35.35-28.65-64-64-64H96C60.65 0 32 28.65 32 64v352h288V304h8c22.09 0 40 17.91 40 40v24.61c0 39.67 28.92 75.16 68.41 79.01C481.71 452.05 520 416.41 520 372V251.93c32.38-10.24 56-40.17 56-75.93v-32c0-8.84-7.16-16-16-16h-16zm-283.91 47.76l-93.7 139c-2.2 3.33-6.21 5.24-10.39 5.24-7.67 0-13.47-6.28-11.67-12.92L167.35 224H108c-7.25 0-12.85-5.59-11.89-11.89l16-107C112.9 99.9 117.98 96 124 96h68c7.88 0 13.62 6.54 11.6 13.21L192 160h57.7c9.24 0 15.01 8.78 10.39 15.76z"></path></svg>
+                <h4>Only New Tech</h4>
+                <p>We provide you with only the newest tech, guranteed!</p>
+            </div>
+            <div class="icon">
+                <svg width="159px" height="131px" viewBox="0 0 159 131" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>Shape</title>
+                    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Desktop" transform="translate(-996.000000, -1117.000000)" fill="#08225E" fill-rule="nonzero">
+                            <g id="Free-Shipping" transform="translate(921.000000, 1117.000000)">
+                                <g id="fast" transform="translate(75.000000, 0.000000)">
+                                    <path d="M155.025,90.0625 L151.05,90.0625 L151.05,62.4041016 C151.05,59.1546875 149.782969,56.0332031 147.547031,53.7304688 L122.728125,28.1701172 C120.492188,25.8673828 117.46125,24.5625 114.306094,24.5625 L103.35,24.5625 L103.35,12.28125 C103.35,5.50097656 98.0085938,0 91.425,0 L27.825,0 C21.2414063,0 15.9,5.50097656 15.9,12.28125 L15.9,24.5625 L1.9875,24.5625 C0.894375,24.5625 0,25.4835937 0,26.609375 L0,30.703125 C0,31.8289063 0.894375,32.75 1.9875,32.75 L69.5625,32.75 C70.655625,32.75 71.55,33.6710937 71.55,34.796875 L71.55,38.890625 C71.55,40.0164063 70.655625,40.9375 69.5625,40.9375 L9.9375,40.9375 C8.844375,40.9375 7.95,41.8585937 7.95,42.984375 L7.95,47.078125 C7.95,48.2039063 8.844375,49.125 9.9375,49.125 L61.6125,49.125 C62.705625,49.125 63.6,50.0460937 63.6,51.171875 L63.6,55.265625 C63.6,56.3914063 62.705625,57.3125 61.6125,57.3125 L1.9875,57.3125 C0.894375,57.3125 0,58.2335937 0,59.359375 L0,63.453125 C0,64.5789063 0.894375,65.5 1.9875,65.5 L53.6625,65.5 C54.755625,65.5 55.65,66.4210938 55.65,67.546875 L55.65,71.640625 C55.65,72.7664062 54.755625,73.6875 53.6625,73.6875 L15.9,73.6875 L15.9,106.4375 C15.9,119.998047 26.5828125,131 39.75,131 C52.9171875,131 63.6,119.998047 63.6,106.4375 L95.4,106.4375 C95.4,119.998047 106.082813,131 119.25,131 C132.417188,131 143.1,119.998047 143.1,106.4375 L155.025,106.4375 C157.21125,106.4375 159,104.595313 159,102.34375 L159,94.15625 C159,91.9046875 157.21125,90.0625 155.025,90.0625 Z M39.75,118.71875 C33.1664063,118.71875 27.825,113.217773 27.825,106.4375 C27.825,99.6572266 33.1664063,94.15625 39.75,94.15625 C46.3335938,94.15625 51.675,99.6572266 51.675,106.4375 C51.675,113.217773 46.3335938,118.71875 39.75,118.71875 Z M119.25,118.71875 C112.666406,118.71875 107.325,113.217773 107.325,106.4375 C107.325,99.6572266 112.666406,94.15625 119.25,94.15625 C125.833594,94.15625 131.175,99.6572266 131.175,106.4375 C131.175,113.217773 125.833594,118.71875 119.25,118.71875 Z M139.125,65.5 L103.35,65.5 L103.35,36.84375 L114.306094,36.84375 L139.125,62.4041016 L139.125,65.5 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <h4>Free Shipping</h4>
+                <p>Always fast and free shipping. Period. No if, and's, or but's!</p>
+            </div>
+            <div class="icon icon__cancel">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="money-bill-wave" class="svg-inline--fa fa-money-bill-wave fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M621.16 54.46C582.37 38.19 543.55 32 504.75 32c-123.17-.01-246.33 62.34-369.5 62.34-30.89 0-61.76-3.92-92.65-13.72-3.47-1.1-6.95-1.62-10.35-1.62C15.04 79 0 92.32 0 110.81v317.26c0 12.63 7.23 24.6 18.84 29.46C57.63 473.81 96.45 480 135.25 480c123.17 0 246.34-62.35 369.51-62.35 30.89 0 61.76 3.92 92.65 13.72 3.47 1.1 6.95 1.62 10.35 1.62 17.21 0 32.25-13.32 32.25-31.81V83.93c-.01-12.64-7.24-24.6-18.85-29.47zM48 132.22c20.12 5.04 41.12 7.57 62.72 8.93C104.84 170.54 79 192.69 48 192.69v-60.47zm0 285v-47.78c34.37 0 62.18 27.27 63.71 61.4-22.53-1.81-43.59-6.31-63.71-13.62zM320 352c-44.19 0-80-42.99-80-96 0-53.02 35.82-96 80-96s80 42.98 80 96c0 53.03-35.83 96-80 96zm272 27.78c-17.52-4.39-35.71-6.85-54.32-8.44 5.87-26.08 27.5-45.88 54.32-49.28v57.72zm0-236.11c-30.89-3.91-54.86-29.7-55.81-61.55 19.54 2.17 38.09 6.23 55.81 12.66v48.89z"></path></svg>
+                <h4>Cancel Anytime</h4>
+                <p>There are no contracts, so you can cancel at any given time.</p>
+            </div>
+        </div>
+        <div class="learn__more">
+            <button type="submit">Learn More</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Designed and Developed by Aldon Smith, <a href="http://smithbros.dev" target="_blank" rel="noopener noreferrer">Smith Brother's Development</a> &copy; 2020. <i>ALL RIGHTS RESERVED.</i></p>
+        </div>
+    </footer>
+    <script defer src="./scripts/script.js"></script>
+</body>
+</html>
+

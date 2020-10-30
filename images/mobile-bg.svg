@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="601px" viewBox="0 0 600 601" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0D3AA2" offset="0%"></stop>
+            <stop stop-color="#08225E" stop-opacity="0.964842896" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="background" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" fill="url(#linearGradient-1)" stroke="#979797">
+            <polygon id="Path" points="0 600 -5.75555864e-14 -5.04430956e-14 600 -1.13686838e-13 600 600"></polygon>
+        </g>
+    </g>
+</svg>
