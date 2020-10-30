@@ -1,5 +1,4 @@
 /* GlOBAL STYLES */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,8 +6,8 @@
 }
 body, html {
     background-image: url('../images/landing-bg.svg');
-    background-size: 100%;
     background-repeat: no-repeat;
+    background-size: contain;
     max-width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -19,11 +18,22 @@ body, html {
     --clr-placeholder: rgba(8, 34, 94, 0.5);
     --signup-shadow: -6px 6px 20px 3px rgba(0,0,0,0.20);
 }
+a {
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+a:hover {
+    opacity: 0.65;
+}
 button {
     border: none;
 }
 button:hover {
     cursor: pointer;
+}
+button:focus {
+    outline: none;
+    opacity: 0.75;
 }
 
 /* NAVIGATION STYLES */
@@ -82,7 +92,6 @@ button:hover {
     width: 25rem;
     height: 28rem;
     background: var(--clr-white);
-    display: none;
     flex-direction: column;
     flex: 1 0 50px;
     justify-content: center;
@@ -95,11 +104,11 @@ button:hover {
 .signup__block h3 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
     color: var(--clr-blue);
 }
 .signup__block hr {
-    margin: 0 10px;
+    margin: 0.5rem;
     color: var(--clr-blue);
 }
 .signup__block form {
@@ -107,8 +116,8 @@ button:hover {
 }
 .signup__block form input {
     width: 11rem;
-    padding: 1rem;
-    margin: 1rem 0.5rem;
+    padding: 0.75rem;
+    margin: 0.5rem;
     border-radius: 0.5rem;
     border: solid var(--clr-placeholder) 1px;  
     font-size: 1rem;
@@ -124,17 +133,24 @@ button:hover {
     font-size: 0.75rem;
     margin: 0 1rem;
     text-align: start;
+    color: var(--clr-placeholder);
 }
 #login {
+    margin-top: 0rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 0;
+    background-color: var(--clr-white);
     color: var(--clr-blue);
-    font-weight: 900;
-    font-size: 0.9rem;
-    text-decoration: none;
+}
+#login:hover {
+    cursor: pointer;
+    border: none;
 }
 .signup__block form button {
     font-size: 1rem;
     padding: 0.75rem 1.5rem;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0.5rem 0;
     border-radius: 22px;
     background-color: var(--clr-blue);
     color: var(--clr-white);
@@ -154,7 +170,6 @@ button:hover {
     width: 25rem;
     height: 28rem;
     background: var(--clr-white);
-    display: flex;
     flex-direction: column;
     flex: 1 0 50px;
     justify-content: center;
@@ -167,11 +182,11 @@ button:hover {
 .login__block h3 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0 0.5rem 0;
     color: var(--clr-blue);
 }
 .login__block hr {
-    margin: 0 10px;
+    margin: 0.5rem;
     color: var(--clr-blue);
 }
 .login__block form {
@@ -179,8 +194,8 @@ button:hover {
 }
 .login__block form input {
     width: 23.25rem;
-    padding: 1rem;
-    margin: 1rem 0.5rem;
+    padding: 0.75rem;
+    margin: 0.5rem;
     border-radius: 0.5rem;
     border: solid var(--clr-placeholder) 1px;  
     font-size: 1rem;
@@ -195,12 +210,31 @@ button:hover {
     color: var(--clr-placeholder);
     font-size: 0.8rem;
 }
-.signup__text a {
-    font-size: 0.95rem;
+#signup {
+    margin-top: 0rem;
+    font-size: 0.8rem;
     font-weight: 800;
-    text-decoration: none;
+    padding: 0;
+    background-color: var(--clr-white);
     color: var(--clr-blue);
 }
+#signup:hover {
+    cursor: pointer;
+    border: none;
+}
+#forgotPword {
+    margin-top: 0rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 0;
+    background-color: var(--clr-white);
+    color: var(--clr-blue);
+}
+#forgotPword:hover {
+    cursor: pointer;
+    border: none;
+}
+
 .login__block form button {
     margin: 0.5rem 0;
     padding: 0.75rem 1.5rem;
@@ -245,8 +279,13 @@ button:hover {
     background-color: #fcfcfa;
 }
 .google__signin {
-    padding: 1rem;
+    margin: 0;
     display: inline-block;
+    transition: display 250ms ease-in;
+    background-color: transparent;
+}
+.google__signin:hover {
+    opacity: 1;
 }
 .google__signin .google__focus, .google__signin .google__pressed {
     display: none;
@@ -264,6 +303,14 @@ button:hover {
 .google__signin:active .google__pressed {
     display: block;
     text-align: center;
+}
+
+/* CLASS TO SWITCH BETWEEN LOGIN AND SIGN-UP*/
+.hidden {
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 350ms ease-in-out;
 }
 
 /* FLOATING TEXT BLOCK STYLES */
@@ -345,17 +392,4 @@ button:hover {
 .footer a {
     text-decoration: none;
     color: var(--clr-blue);
-}
-
-/* MEDIA QUERIES */
-
-@media only screen and (max-width: 944px) {
-    body, html {
-        background-image: url('../images/mobile-bg.svg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        max-width: 100%;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-    }
 }
